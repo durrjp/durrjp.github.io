@@ -2103,7 +2103,7 @@ button:hover:active:after,
 	flex-wrap: wrap;
 	border-radius: 0.25em;
 	border: solid 1px white;
-	background: rgb(214, 166, 160);
+	background: rgb(160, 192, 214);
 	margin: 0 0 2em 0;
 }
 
@@ -2427,7 +2427,7 @@ textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
-	background: white;
+	background: rgba(255, 255, 255, 0.329);
 	border-radius: 0.25em;
 	border: none;
 	border: solid 1px rgba(218, 217, 217);
@@ -2635,7 +2635,7 @@ input[type="radio"]+label:before {
 	display: block;
 	background: #ffffff;
 	border-radius: 100%;
-	color: #312450;
+	color: #4e0a0a;
 	text-align: center;
 	line-height: 2.5em;
 	margin: 0 0 1.3em 0;
@@ -2662,7 +2662,7 @@ input[type="radio"]+label:before {
 }
 
 .wrapper.style3 .icon.major:before {
-	color: #141a33;
+	color: #aa3b3b;
 }
 
 .wrapper.style3-alt .icon.major:before {
@@ -3138,7 +3138,7 @@ body.is-ie .spotlights>section {
 	-ms-transition: opacity 1s ease;
 	transition: opacity 1s ease;
 	background: rgb(110, 41, 41);
-	content: '';
+	content: normal;
 	display: block;
 	height: 100%;
 	left: 0;
@@ -3355,7 +3355,7 @@ table.alt tfoot {
 }
 
 .wrapper.style1 {
-	background: rgb(163, 84, 84);
+	background: rgb(84, 118, 214);
 }
 
 .wrapper.style1-alt {
@@ -4038,7 +4038,8 @@ body.is-preload #sidebar nav ul li {
 
 /* mine */
 .jonImgContainer {
-	text-align: center;
+	text-align: right;
+	display: flex;
 }
 
 .innerHeader {
@@ -4048,7 +4049,7 @@ body.is-preload #sidebar nav ul li {
 
 .content {
 	color: white;
-	background-color: rgb(110, 41, 41);
+	background-color: rgb(39, 66, 138);
 }
 
 .skillContainer {
@@ -4067,6 +4068,70 @@ body.is-preload #sidebar nav ul li {
 
 
 .boulderBuddyImg {
-	background-color: rgb(214, 166, 160);
+	background: radial-gradient(50% 50% at 50% 50%, rgb(253, 253, 253) 0%, rgb(39, 66, 138) 100%) !important;
 	align-items: center;
+}
+
+.appImage {
+	margin-top: 1.5em;
+	height: 90%;
+	margin-left: 3em;
+	display: block !important
+}
+
+.hidden {
+	display: none !important;
+}
+
+.iconList {
+	display: flex;
+	flex-flow: column nowrap;
+	text-decoration: none;
+	border-bottom: none;
+	justify-content: flex-end;
+	margin-right: 2em;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.sidebarIcon {
+	margin-left: 1em !important
+}
+
+.sidebarIcon:hover {
+	fill: orange
+}
+
+.technologyIcons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 5em;
+	bottom:0
+}
+
+.techIcon {
+	width: 4em;
+	bottom:0
+
+}
+
+.react {
+	width: 7em
+}
+.chart {
+	width: 6em
+}
+
+.figma {
+	height: 4em;
+	margin-top:auto;
+	margin-bottom: auto;
+
+}
+
+.picOfMeContainer {
+	border-radius: 10px;
+	max-height:4em;
+	width:auto;
+	padding-bottom: 0;
 }

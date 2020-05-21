@@ -47,7 +47,10 @@
 	// Sidebar.
 		if ($sidebar.length > 0) {
 
+
 			var $sidebar_a = $sidebar.find('a');
+			
+
 
 			$sidebar_a
 				.addClass('scrolly')
@@ -56,7 +59,7 @@
 					var $this = $(this);
 
 					// External link? Bail.
-						if ($this.attr('href').charAt(0) != '#')
+						if ($this.attr('href').charAt(0) !== '#')
 							return;
 
 					// Deactivate all links.
@@ -69,6 +72,9 @@
 
 				})
 				.each(function() {
+					var $this = $(this);
+					if ($this.attr('href').charAt(0) !== '#')
+							return;
 
 					var	$this = $(this),
 						id = $this.attr('href'),
