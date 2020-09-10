@@ -4072,12 +4072,21 @@ body.is-preload #sidebar nav ul li {
 	align-items: center;
 }
 
+.zipmarketsSVG {
+	position: absolute;
+	left: -1.8em;
+	bottom: -1.9em;
+	display: block !important
+}
+
 .appImage {
 	margin-top: 1.5em;
 	height: 90%;
 	margin-left: 3em;
 	display: block !important
 }
+
+
 
 .hidden {
 	display: none !important;
